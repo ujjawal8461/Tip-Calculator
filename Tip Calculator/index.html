@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div id="mainContainer">
+
+
+
+        <div id="inputWindow">
+            
+
+            <div id="billSec">
+                <li>Bill Ammount</li>
+                <input id="billAmtInp" type="text">
+            </div>
+
+            <div id="tipSec">
+                
+                <li>Select Tip Ammount</li>
+                
+                <div class="row one">
+                    <button onclick="tip(5)" >5%</button>
+                    <button onclick="tip(10)" >10%</button>
+                    <button onclick="tip(15)" >15%</button>
+                </div>
+
+                <div class="row two">
+                    <button onclick="tip(20)" >20%</button>
+                    <button onclick="tip(25)" >25%</button>
+                    <input id="tipAmtInp" type="text">
+                </div>
+
+            </div>
+
+            <li id="peopleHeading">No. Of People</li>
+            <div id="peopleSec">
+                
+                <button onclick="inc()">+</button>
+                <li id="peopleInp" >1</li>
+                <button onclick="dec()" >-</button>
+            </div>
+
+
+        </div>
+
+
+
+        <div id="outputWindow">
+
+            <div>
+                <li id="totalAmtHeading">Total Ammount</li>
+                <li id="totalBill" class="number">0.00</li>
+
+                <li>Tip Ammount</li>
+                <li id="totalTip" class="number">0.00</li>
+
+                <li>Tota Ammount Per Person</li>
+                <li id="totalBillPerPerson" class="number">0.00</li>
+            </div>
+
+            <div id="mainBtn">
+                <button onclick="cal()" id="calculate">Calculate</button>
+                <button onclick="reset()" id="reset">Reset</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
